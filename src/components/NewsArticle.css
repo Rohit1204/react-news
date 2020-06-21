@@ -1,13 +1,19 @@
 li{
-    padding: 15px;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 15px;
-    color: #dc3545;
-    border-radius: 5px;
+    color: wheat;
     list-style: none;
     transition:  background-color .2s ease-out;
     text-transform: capitalize;
+    justify-items: center;
+}
+.media{
+    width: 70%;
+    border-radius: 5px;
+    justify-content: center;
+}
+.content{
+    justify-items: center;
 }
 
 a{

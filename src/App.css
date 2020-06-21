@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -38,9 +39,13 @@
 }
 .news-list {
   margin-top: 1.5rem;
+  justify-content: center;
 }
 
-.media-left > .image {
-  width: 128px;
-  padding: 10px;
+.container{
+  justify-content: center;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
 }

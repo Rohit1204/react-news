@@ -1,7 +1,8 @@
   
 import React, { Component } from 'react';
-import SourceSelection from './components/SourceSelection';
-import NewsList from './components/NewsList';
+
+import Footer from "./components/Footer";
+import Navbar from "./components/AppBar";
 
 class App extends Component {
   constructor() {
@@ -17,8 +18,10 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <SourceSelection onSourceChange={this.handleSourceChange} />
-        <NewsList source={this.state.source} />
+        <Navbar/>
+        <div className="footer">
+        <Footer/>
+        </div>
       </div>
     );
   }

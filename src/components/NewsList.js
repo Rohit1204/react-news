@@ -6,7 +6,7 @@ class NewsList extends Component {
     super(props);
     this.state = {
       articles: [],
-      color:["#27AE60",'#3498DB','#E67E22','#E74C#C'] 
+      colors:['#3498DB',"#FF6347",'#157DEC'] 
     }
   }
 
@@ -21,9 +21,10 @@ class NewsList extends Component {
   }
 
   renderArticles() {
+    const {colors} = this.state;
     return this.state.articles.map((article, index) => {
       return (
-        <NewsArticle key={index} article={article}  color={this.state.color[index]}/>
+        <NewsArticle key={index} article={article}  color={this.state.colors[index%colors.length]}/>
       )
     });
   }

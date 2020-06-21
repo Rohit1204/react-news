@@ -10,7 +10,7 @@ class NewsArticle extends Component {
    
     
     return (
-      <div className="media">
+      <div className="media" style = {{backgroundColor : color}}>
         <div className="media-content">
           <div className="content">
         <li>
