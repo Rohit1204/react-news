@@ -11,6 +11,7 @@ li{
     width: 70%;
     border-radius: 5px;
     justify-content: center;
+    margin-top :10px;
 }
 .content{
     justify-items: center;
